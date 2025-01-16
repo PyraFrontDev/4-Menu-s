@@ -9,13 +9,16 @@ body {
 	font-family: 'Ubuntu', sans-serif;
 	overflow: hidden;
 	color: #fff;
-	background: radial-gradient(circle, rgba(232,224,16,1) 37%, rgba(236,11,11,1) 46%, rgba(3,0,0,1) 47%);
+	background: #b6b946;
 }
 
 nav {
 	margin-top: 100px;
-	background-color: #363636;
+	background-color: #4946b9;
 	text-align: center;
+	li {
+		background-color: #4946b9;
+	}
 }
 
 ul {
@@ -32,10 +35,6 @@ ul {
 	transition: background-color 0.3;
 }
 
-.menu-item:hover {
-	background-color: #363636;
-}
-
 .dropdown {
 	position: absolute;
 	width: 300px;
@@ -44,12 +43,8 @@ ul {
 .dropdown li {
 	display: none;
 	opacity: 0;
-	background-color: #363636;
-	transition: color 0.3s;
-}
 
-.dropdown li:hover {
-	color: rgb(14, 150, 191);
+	transition: color 0.3s;
 }
 
 .menu-item:hover .dropdown li {
@@ -105,15 +100,12 @@ The :nth-child() CSS pseudo-class matches elements based on the indexes of the e
 	}
 }
 
-
-
 /* ------------- */
 
 .three:hover .dropdown li {
 	display: block;
 	animation: menu3 0.5s forwards;
 }
-
 
 @keyframes menu3 {
 	from {
@@ -134,11 +126,10 @@ The :nth-child() CSS pseudo-class matches elements based on the indexes of the e
 	transform-origin: top;
 }
 
-
 @keyframes menu4 {
 	from {
 		opacity: 0;
-		transform: scale(.8) translateY(-40px);
+		transform: scale(0.8) translateY(-40px);
 	}
 	to {
 		opacity: 1;
